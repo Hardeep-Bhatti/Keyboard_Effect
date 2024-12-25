@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+
+
+/* Using CSS for Button Pressing Effect
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.main_01
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    transform-style: preserve-3d;
+    transform: rotateX(50deg) rotateY(-10deg);
+}
+
+.main_01 > section
+{
+    color: whitesmoke;
+    font-family: "Rubik Vinyl";
+    font-size: 2rem;
+    justify-self: center;
+    border: 2px solid transparent;
+    padding: 1rem;
+    box-shadow: 
+    .3rem .3rem .3rem deepskyblue,
+    .3rem .3rem .3rem deepskyblue,
+    .3rem .3rem .3rem deepskyblue,
+    .6rem .6rem .6rem whitesmoke,
+    .6rem .6rem .6rem whitesmoke,
+    .6rem .6rem .6rem whitesmoke;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+
+.main_01 section:nth-child(26)
+{
+    grid-column: 3 / 4;
+}
+
+.main_01 > section:hover
+{
+    transform: scale(1);
+}
+
+*/
+
+/* Using JavaScript for Button Pressing Effect */
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.main_01
+{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2rem;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg) rotateY(5deg);
+}
+
+.main_01 > section
+{
+    color: whitesmoke;
+    font-family: "Rubik Vinyl";
+    font-size: 2rem;
+    justify-self: center;
+    border: 2px solid transparent;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .15s linear;
+    transform: scale(1.2);   
+}
+
+.default_styles
+{
+    box-shadow: 
+    .3rem .3rem .3rem deepskyblue,
+    .3rem .3rem .3rem deepskyblue,
+    .3rem .3rem .3rem deepskyblue,
+    .6rem .6rem .6rem whitesmoke,
+    .6rem .6rem .6rem whitesmoke,
+    .6rem .6rem .6rem whitesmoke;
+}
+
+.dynamic_styles
+{
+    box-shadow: 
+    .3rem .3rem .3rem crimson,
+    .3rem .3rem .3rem crimson,
+    .3rem .3rem .3rem crimson,
+    .6rem .6rem .6rem whitesmoke,
+    .6rem .6rem .6rem whitesmoke,
+    .6rem .6rem .6rem whitesmoke;
+}
+
+.main_01 section:nth-child(31)
+{
+    grid-column: 3 / 4;
+}
+
+@media (max-width: 1024px)
+{
+    html
+    {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    html
+    {
+        font-size: 6.5px;
+    }
+}
+
+@media (max-width: 425px)
+{
+    html
+    {
+        font-size: 5.5px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    html
+    {
+        font-size: 4px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    html
+    {
+        font-size: 3.5px;
+    }
+}
+
+@media (max-width: 250px)
+{
+    html
+    {
+        font-size: 2.5px;
+    }
+}
