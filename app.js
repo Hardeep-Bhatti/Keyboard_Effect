@@ -12,6 +12,8 @@ buttons.forEach(item =>
 
             item.classList.add('dynamic_styles');
 
+            audio.currentTime = 0;
+
             audio.play();
 
             setTimeout(() =>
