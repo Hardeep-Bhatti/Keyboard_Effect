@@ -101,7 +101,7 @@ body
     padding: 1rem;
     cursor: pointer;
     transition: all .15s linear;
-    transform: scale(1.2);   
+    transform: scale(1.2);
 }
 
 .default_styles

@@ -1,5 +1,24 @@
 let buttons = document.querySelectorAll('section');
 
+gsap.to("section", {
+    boxShadow: ".3rem .3rem .3rem orange, .3rem .3rem .3rem orange, .3rem .3rem .3rem orange, .6rem .6rem .6rem whitesmoke, .6rem .6rem .6rem whitesmoke, .6rem .6rem .6rem whitesmoke",
+    ease: "power2",
+    rotationZ: 360,
+    scale: "1.5",
+    delay: .5,
+    yoyo: true,
+    repeat: 1,
+    stagger: {
+        amount: 3,
+        from: "edges"
+    },
+    onComplete: () => {
+        gsap.set("section", {
+            clearProps: "boxShadow"
+        });
+    }
+});
+
 let audio = document.querySelector('.audio_01');
 
 buttons.forEach(item => 
